@@ -23,7 +23,7 @@ start "3-Scheduler(8091)" cmd /k "cd /d "%~dp0scheduler" && set PYTHONUTF8=1 && 
 timeout /t 2 >nul
 
 echo [4/4] 启动前端网页界面 (端口 9000)...
-start "4-Frontend(9000)" cmd /k "cd /d "%~dp0" && npx vite --host 0.0.0.0 --port 9000"
+start "4-Frontend(9000)" cmd /k "cd /d "%~dp0frontend" && npx vite --host 0.0.0.0 --port 9000"
 
 echo ========================================================
 echo 全部 4 个核心服务已在后台启动！
